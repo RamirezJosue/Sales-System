@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sistema de Ventas</title>
+    <link rel="stylesheet" href="../vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" href="../build/css/custom.min.css">
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="glyphicon glyphicon-home"></i> <span>PaginaPrincipal</span></a>
+            </div>
+            <div class="clearfix"></div>
+
+            <!-- perfil de menú información rápida -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Usuario</h2>
+              </div>
+            </div>
+            <!-- /perfil de menú información rápida -->
+
+          <br/>
+
+           <!-- Barra lateral -->
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+             <div class="menu_section">
+               <h3>General</h3>
+               <ul class="nav side-menu">
+                 <li><a><i class="fa fa-home"></i> Almacenero <span class="fa fa-chevron-down"></span></a>
+                   <ul class="nav child_menu">
+                     <li><a href="index.html">Producto</a></li>
+                     <li><a href="index2.html">Categoria</a></li>
+                   </ul>
+                 </li>
+                 <li><a><i class="fa fa-edit"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">Compra</a></li>
+                      <li><a href="form_advanced.html">Proveedor</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general_elements.html">Venta</a></li>
+                      <li><a href="media_gallery.html">Cliente</a></li>
+                      <li><a href="typography.html">Verificar Producto</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Consultas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Ventas Realizadas</a></li>
+                      <li><a href="tables_dynamic.html">Ventas Detalladas</a></li>
+                      <li><a href="icons.html">Compras Realizadas</a></li>
+                      <li><a href="icons.html">Compras Detalladas</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Mantenimiento <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Empleado</a></li>
+                      <li><a href="chartjs2.html">Tipo de Documento</a></li>
+                      <li><a href="morisjs.html">Tipo de Usuario</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-clone"></i>Anulaciones <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="fixed_sidebar.html">Anular venta</a></li>
+                      <li><a href="fixed_footer.html">Anular Compra</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-clone"></i>Herramientas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="fixed_sidebar.html">Cambiar Contraseña</a></li>
+                      <li><a href="fixed_footer.html">Calculadora</a></li>
+                      <li><a href="fixed_footer.html">Respaldar BD</a></li>
+                      <li><a href="fixed_footer.html">Restaurar BD</a></li>
+                    </ul>
+                  </li>
+               </ul>
+             </div>
+           </div>
+           <!-- /Barra lateral -->
+
+           <!-- Botones de pie lateral-->
+           <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+           <!-- /Botones de pie lateral -->
+
+           <!-- Navegacion superior -->
+           <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Josue Ramirez
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Perfil</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Configuraciones</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Ayuda</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Cerrar Sesion</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Josue Ramirez</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Los festivales de cine solían ser momentos de hacer o morir para los cineastas. Ellos estaban donde
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>Ver toda las alertas</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /Navegacion superior -->
+
+        <!-- contenido de página -->
+      
+        <!-- /contenido de página -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Sistema de Ventas <a href="https://colorlib.com">Admin</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
