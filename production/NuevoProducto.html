@@ -181,10 +181,32 @@
                   <span class="section">Nuevo Producto</span>
                   <form class="form-horizontal form-label-left" >
                     <div class="item form-group bad">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12"> Id</label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12"> ID:</label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ingrese id" required="required" type="text">
+                        <input class="form-control" id="disabledInput" type="text" placeholder="" disabled>
                       </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nombre
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Ingrese Nombre" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Categoria
+                        <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <select class="form-control">
+                          <option>Seleccione</option>
+                          <option>Aborrotes</option>
+                          <option>Medicamentos</option>
+                          <option>Ferreteria</option>
+                          <option>Tecnologia</option>
+                          <option>Bebidas</option>
+                        </select>
                     </div>
                   </form>
                 </div>
@@ -194,6 +216,7 @@
 
           </div>
 
+        </div>
         </div>
         <!-- /contenido de página -->
 
