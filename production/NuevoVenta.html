@@ -189,82 +189,148 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_content">
-                  <span class="section">Ventas</span>
-                  <br>
-                  <form class="form-inline " >
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Buscar">
-                    </div>
-                    <button type="submit" class="btn btn-info">Buscar</button>
-                    <button type="button" class="btn btn-success">Nuevo</button>
-                  </form>
-                  <br>
-                  <div class="table-responsive">
-                    <table class="table table-striped jambo_table bulk_action">
-                      <thead>
-                        <tr class="headings">
-                          <th>
+                  <span class="section">Venta</span>
+                  <div class="col-sm-14"  style="display: block;">
+                    <form name="frmIngresos"  enctype="multipart/form-data">
+                      <div class="row">
+                        <div class="col-sm-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 main">
+                          <div class="row">
+                            <div class="col-lg-8 left">
+                              <label for="">Cliente:</label>
+                              <div class="form-group has-success">
+                                <input type="hidden"  class="form-control">
+                                <input  type="hidden"  class="form-control">
+                                <input  type="hidden" class="form-control">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Seleccione un Proveedor"  disabled="">
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success" ><i class="fa fa-search"></i>
+                                      Buscar
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 left">
+                              <label for="">Impuesto</label>
+                              <div class="form-group">
+                                <div class="input-group has-success">
+                                  <input type="text" class="form-control" style="text-align:center;"  disabled="">
+                                  <div class="input-group-addon">%</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row" >
+                            <div class="col-lg-6 left">
+                              <div class="form-group">
+                                <button type="button" class="btn btn-info"><i class="fa fa-search"></i>
+                                  Buscar Artículos
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+                        <div class="col-sm-9 col-lg-12 main">
+                          <div class="table-responsive">
+                            <table class="table table-striped jambo_table bulk_action">
+                              <thead>
+                                <tr class="headings">
+                                  <th>
 
-                          </th>
-                            <th class="column-title">#</th>
-                            <th class="column-title">Cliente</th>
-                            <th class="column-title">T. Pedido</th>
-                            <th class="column-title">Fecha</th>
-                            <th class="column-title">Total</th>
-                            <th class="column-title">Estado</th>
-                            <th class="column-title no-link last" style="display: table-cell;">
-                              <span class="nobr">Opciones</span>
-                            </th>
-                            <th class="bulk-actions" colspan="7" style="display: none;">
-                              <a class="antoo" style="color:#fff; font-weight:500">
-                                "Bulk Actions ("
-                                <span class="antion-cnt">Selected</span>
-                                ")"
-                              </a>
-                            </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="even pointer">
-                          <td class="a-center"></td>
-                          <td class="">1</td>
-                          <td class="">Juan Carlos</td>
-                          <td class="">Venta</td>
-                          <td class="">2017-06-14</td>
-                          <td class="">200.0</td>
-                          <td class="">Aceptado</td>
+                                  </th>
+                                    <th class="column-title">Articulo</th>
+                                    <th class="column-title">Codigo</th>
+                                    <th class="column-title">Serie</th>
+                                    <th class="column-title">Stock</th>
+                                    <th class="column-title">P.Venta</th>
+                                    <th class="column-title">Cantidad</th>
+                                    <th class="column-title">Descuento</th>
+                                    <th class="column-title no-link last" style="display: table-cell;">
+                                      <span class="nobr">Opciones</span>
+                                    </th>
+                                    <th class="bulk-actions" colspan="7" style="display: none;">
+                                      <a class="antoo" style="color:#fff; font-weight:500">
+                                        "Bulk Actions ("
+                                        <span class="antion-cnt">Selected</span>
+                                        ")"
+                                      </a>
+                                    </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="even pointer">
+                                  <td class="a-center">
+                                  </td>
+                                  <td class="">laptop</td>
+                                  <td class="">566655665656</td>
+                                  <td class="">85</td>
+                                  <td class="">8</td>
+                                  <td class="">
+                                    <input class="form-control" type="text" >
+                                  </td>
+                                  <td class="">
+                                    <input class="form-control" type="text" >
+                                  </td>
+                                  <td class="">
+                                    <input class="form-control" type="text" >
+                                  </td>
+                                  <td>
+                                    <a href="#" class="btn btn-danger btn-xs">
+                                      <i class="fa fa-times-circle">
+                                        eliminar
+                                      </i>
+                                    </a>
+                                  </td>
 
-                          <td>
-                            <a href="#" class="btn btn-info btn-xs">
-                              <i class="fa fa-pencil">
-                              </i>
+                                </tr>
+                              </tbody>
 
-                            </a>
-                            <a href="#" class="btn btn-warning btn-xs">
-                              <i class="fa fa-times-circle">
-                              </i>
+                            </table>
 
-                            </a>
-                            <a href="#" class="btn btn-success btn-xs">
-                              <i class="fa fa-file-text">
-                              </i>
-                            </a>
-                          </td>
-
-                        </tr>
-                      </tbody>
-
-                    </table>
-
+                          </div>
+                        </div>
+                        <div class="col-sm-9 col-sm-offset-3 col-lg-8 col-lg-offset-2 main">
+                          <div class="row">
+                            <div class="col-lg-4 left">
+                              <div class="input-group has-error">
+                                <div class="input-group-addon">S/ Sub Total:</div>
+                                <input type="text" class="form-control" name="txtSubTotal" placeholder="Sub Total" disabled="">
+                              </div>
+                            </div>
+                            <div class="col-lg-4 left  has-error">
+                              <div class="input-group">
+                                <div class="input-group-addon">S/ IGV 18.00%:</div>
+                                <input type="text" class="form-control" name="txtIgv" placeholder="Impuesto" disabled="">
+                              </div>
+                            </div>
+                            <div class="col-lg-4 left has-error">
+                              <div class="input-group">
+                                <div id="Total" class="input-group-addon">S/ Total:</div>
+                                <input type="text" class="form-control"  name="txtTotal" placeholder="Total" disabled="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-12 left">
+                          <h5></h5>
+                          <button class="btn btn-warning" type="submit" ><i class="fa fa-floppy-o"></i> Generar Venta</button>
+                          <a href="" class="btn btn-primary"><i class="fa fa-remove"></i> Cancelar</a>
+                          <hr>
+                          <span class="lead text-primary"></span>
+                        </div>
+                        <br><br>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
-
             </div>
-           </div>
-
+          </div>
         </div>
-
         <!-- /contenido de página -->
 
         <!-- footer content -->
